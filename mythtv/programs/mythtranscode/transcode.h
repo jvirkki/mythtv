@@ -30,7 +30,7 @@ class Transcode : public QObject
     NuppelVideoPlayer *nvp;
     RingBuffer *inRingBuffer;
     RingBuffer *outRingBuffer;
-    FIFOWriter::FIFOWriter *fifow;
+    FIFOWriter *fifow;
     QPtrList<struct kfatable_entry> *kfa_table;
     bool showprogress;
 };

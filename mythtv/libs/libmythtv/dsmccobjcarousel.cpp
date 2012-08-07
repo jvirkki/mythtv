@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <zlib.h>
+#include <cstddef>
 
 #include "dsmccobjcarousel.h"
 #include "dsmccreceiver.h"

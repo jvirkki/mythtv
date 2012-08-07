@@ -19,6 +19,7 @@
 
 */
 
+#include <cstddef>
 #include <qvaluevector.h>
 #include <qregexp.h>
 

@@ -1,3 +1,4 @@
+#include <cstddef>
 #include "mythuistatetype.h"
 #include "mythuiimage.h"
 #include "mythpainter.h"

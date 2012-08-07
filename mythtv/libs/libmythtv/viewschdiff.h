@@ -1,6 +1,7 @@
 #ifndef VIEWSCHEDULEDIFF_H_
 #define VIEWSCHEDULEDIFF_H_
 
+#include <cstddef>
 #include <qvaluevector.h>
 #include <qdatetime.h>
 #include <qdom.h>

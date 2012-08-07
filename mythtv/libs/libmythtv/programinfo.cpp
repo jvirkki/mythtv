@@ -105,7 +105,7 @@ ProgramInfo::ProgramInfo(void) :
     endts = startts;
     recstartts = startts;
     recendts = startts;
-    originalAirDate = QDate::QDate (0, 1, 1);
+    originalAirDate = QDate(0, 1, 1);
     lastmodified = startts;
     lastInUseTime = startts.addSecs(-4 * 60 * 60);
 
@@ -906,7 +906,7 @@ ProgramInfo *ProgramInfo::GetProgramFromRecorded(const QString &channel,
         
         if (query.value(17).isNull() || query.value(17).toString().isEmpty())
         {
-            proginfo->originalAirDate = QDate::QDate (0, 1, 1);
+            proginfo->originalAirDate = QDate(0, 1, 1);
             proginfo->hasAirDate = false;
         }
         else
@@ -3925,7 +3925,7 @@ void ProgramInfo::showDetails(void) const
     }
     if (findid > 0)
     {
-        QDate fdate = QDate::QDate (1970, 1, 1);
+        QDate fdate = QDate(1970, 1, 1);
         fdate = fdate.addDays(findid - 719528);
         ADD_PAR(QObject::tr("Find ID"), QString("%1 (%2)").arg(findid)
                 .arg(fdate.toString(fullDateFormat)), msg)
@@ -4678,7 +4678,7 @@ bool ProgramList::FromProgram(const QString &sql, MSqlBindings &bindings,
 
         if (query.value(17).isNull() || query.value(17).toString().isEmpty())
         {
-            p->originalAirDate = QDate::QDate (0, 1, 1);
+            p->originalAirDate = QDate(0, 1, 1);
             p->hasAirDate = false;
         }
         else
@@ -4857,7 +4857,7 @@ bool ProgramList::FromRecorded( bool bDescending, ProgramList *pSchedList )
             if (query.value(26).isNull() || 
                 query.value(26).toString().isEmpty())
             {
-                proginfo->originalAirDate = QDate::QDate (0, 1, 1);
+                proginfo->originalAirDate = QDate(0, 1, 1);
                 proginfo->hasAirDate      = false;
             }
             else

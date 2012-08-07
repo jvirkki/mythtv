@@ -1,3 +1,7 @@
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
 #include "mythcdrom.h"
 #include "mythcdrom-linux.h"
 #include <sys/ioctl.h>       // ioctls

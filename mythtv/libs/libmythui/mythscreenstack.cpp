@@ -1,3 +1,4 @@
+#include <cstddef>
 #include "mythscreenstack.h"
 #include "mythmainwindow.h"
 #include "mythscreentype.h"
